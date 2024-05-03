@@ -20,7 +20,7 @@
 
     <p id="cakeText">Click on the Cake!</p>
 
-<!-- -------------------------------------------Cake customization form-------------------------->
+    <!-- -------------------------------------------Cake customization form-------------------------->
 
     <container id="cakeForm">
         <form id="flavorForm">
@@ -28,65 +28,74 @@
                 <legend>
                     Choose a Flavor:
                 </legend>
-                <input type="checkbox" id="orange" name="flavors" />
+                <input type="checkbox" id="orange" name="flavors" required/>
                 <label for="orange">Orange</label>
 
-                <input type="checkbox" id="vanilla" name="flavors" />
+                <input type="checkbox" id="vanilla" name="flavors" required/>
                 <label for="Vanilla">Vanilla</label>
 
-                <input type="checkbox" id="mint" name="flavors" />
+                <input type="checkbox" id="mint" name="flavors" required />
                 <label for="Mint">Mint</label>
 
-                <input type="checkbox" id="strawberry" name="flavors" />
+                <input type="checkbox" id="strawberry" name="flavors" required />
                 <label for="Strawberry">Strawberry</label>
 
-                <input type="checkbox" id="chocolate" name="flavors" />
+                <input type="checkbox" id="chocolate" name="flavors" required />
                 <label for="Chocolate">Chocolate</label>
 
-                <input type="checkbox" id="lemon" name="flavors" />
+                <input type="checkbox" id="lemon" name="flavors" required/>
                 <label for="lemon">Lemon</label>
             </fieldset>
         </form>
     </container>
 
-<!---------------------------Cake type form ------------------------------------------------------>
+    <!---------------------------Cake type form ------------------------------------------------------>
 
     <form id="cakeTypeform">
         <fieldset>
             <legend>
                 Choose the Type of Cake:
             </legend>
-            <input type="checkbox" id="chocolate2" name="cakeType" />
+            <input type="checkbox" id="chocolate2" name="cakeType" required />
             <label for="chocolate">Chocolate</label>
 
-            <input type="checkbox" id="white" name="cakeType" />
+            <input type="checkbox" id="white" name="cakeType" required />
             <label for="white">White</label>
 
-            <input type="checkbox" id="yellow" name="cakeType" />
+            <input type="checkbox" id="yellow" name="cakeType" required />
             <label for="yellow">Yellow</label>
 
-            <input type="checkbox" id="redVelvet" name="cakeType" />
+            <input type="checkbox" id="redVelvet" name="cakeType" required />
             <label for="redvelvet">Red Velvet</label>
 
-            <input type="checkbox" id="carrot" name="cakeType" />
+            <input type="checkbox" id="carrot" name="cakeType" required />
             <label for="carrot">Carrot</label>
 
         </fieldset>
     </form>
-<!---------------------------------Choose Cake Shape form---------------------------------------------->
-<form>
-    <fieldset>
-        <legend>
-Choose the Cake Shape:
-        </legend>
+    <!---------------------------------Choose Cake Shape form---------------------------------------------->
+    <form id="cakeShape">
+        <fieldset>
+            <legend>
+                Choose the Cake Shape:
+            </legend>
+            <input type="checkbox" id="square" name="cakeShape" required />
+            <label for="square">Square</label>
+
+            <input type="checkbox" id="circle" name="cakeShape" required />
+            <label for="circle">Circle</label>
+
+            <input type="checkbox" id="rectangle" name="cakeShape" required />
+            <label for="rectangle">Rectangle</label>
+
+            <input type="checkbox" id="other" name="cakeShape" required />
+            <label for="other">Other</label>
+
+        </fieldset>
+    </form>
 
 
 
-
-
-
-    </fieldset>
-</form>
 
 </body>
 
