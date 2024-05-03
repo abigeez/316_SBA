@@ -4,7 +4,7 @@ const animImg = document.querySelector("img");
 
 
 animImg.addEventListener("click", event => {
-    event.target.style.backgroundColor = "powderblue";
+    event.target.style.backgroundColor = "gold";
 
 });
 
