@@ -22,78 +22,86 @@
 
     <!-- -------------------------------------------Cake customization form-------------------------->
 
-    <container id="cakeForm">
+    <div id=cakeDetails>
         <form id="flavorForm">
             <fieldset>
                 <legend>
                     Choose a Flavor:
                 </legend>
-                <input type="checkbox" id="orange" name="flavors" required />
+                <input type="checkbox" id="orange" name="flavors" />
                 <label for="orange">Orange</label>
 
-                <input type="checkbox" id="vanilla" name="flavors" required />
+                <input type="checkbox" id="vanilla" name="flavors" />
                 <label for="Vanilla">Vanilla</label>
 
-                <input type="checkbox" id="mint" name="flavors" required />
+                <input type="checkbox" id="mint" name="flavors" />
                 <label for="Mint">Mint</label>
 
-                <input type="checkbox" id="strawberry" name="flavors" required />
+                <input type="checkbox" id="strawberry" name="flavors" />
                 <label for="Strawberry">Strawberry</label>
 
-                <input type="checkbox" id="chocolate" name="flavors" required />
+                <input type="checkbox" id="chocolate" name="flavors" />
                 <label for="Chocolate">Chocolate</label>
 
-                <input type="checkbox" id="lemon" name="flavors" required />
+                <input type="checkbox" id="lemon" name="flavors" />
                 <label for="lemon">Lemon</label>
+                <input type="checkbox" id="noFlav" name="flavors" />
+                <label for="none">None</label>
+
             </fieldset>
+
+
+
+            <!---------------------------Cake type form ------------------------------------------------------>
+
+
+            <fieldset>
+                <legend>
+                    Choose the Type of Cake:
+                </legend>
+                <input type="checkbox" id="chocolate2" name="cakeType" required />
+                <label for="chocolate">Chocolate</label>
+
+                <input type="checkbox" id="white" name="cakeType" required />
+                <label for="white">White</label>
+
+                <input type="checkbox" id="yellow" name="cakeType" required />
+                <label for="yellow">Yellow</label>
+
+                <input type="checkbox" id="redVelvet" name="cakeType" required />
+                <label for="redvelvet">Red Velvet</label>
+
+                <input type="checkbox" id="carrot" name="cakeType" required />
+                <label for="carrot">Carrot</label>
+
+            </fieldset>
+
+            <!---------------------------------Choose Cake Shape form---------------------------------------------->
+
+            <fieldset>
+                <legend>
+                    Choose the Cake Shape:
+                </legend>
+                <input type="checkbox" id="square" name="cakeShape" required />
+                <label for="square">Square</label>
+
+                <input type="checkbox" id="circle" name="cakeShape" required />
+                <label for="circle">Circle</label>
+
+                <input type="checkbox" id="rectangle" name="cakeShape" required />
+                <label for="rectangle">Rectangle</label>
+
+                <input type="checkbox" id="other" name="cakeShape" required />
+                <label for="other">Other</label>
+                <br>
+                <br>
+
+                <input type="submit" value="Submit">
+
         </form>
-    </container>
 
-    <!---------------------------Cake type form ------------------------------------------------------>
-
-    <form id="cakeTypeform">
-        <fieldset>
-            <legend>
-                Choose the Type of Cake:
-            </legend>
-            <input type="checkbox" id="chocolate2" name="cakeType" required />
-            <label for="chocolate">Chocolate</label>
-
-            <input type="checkbox" id="white" name="cakeType" required />
-            <label for="white">White</label>
-
-            <input type="checkbox" id="yellow" name="cakeType" required />
-            <label for="yellow">Yellow</label>
-
-            <input type="checkbox" id="redVelvet" name="cakeType" required />
-            <label for="redvelvet">Red Velvet</label>
-
-            <input type="checkbox" id="carrot" name="cakeType" required />
-            <label for="carrot">Carrot</label>
-
-        </fieldset>
-    </form>
-    <!---------------------------------Choose Cake Shape form---------------------------------------------->
-    <form id="cakeShape">
-        <fieldset>
-            <legend>
-                Choose the Cake Shape:
-            </legend>
-            <input type="checkbox" id="square" name="cakeShape" required />
-            <label for="square">Square</label>
-
-            <input type="checkbox" id="circle" name="cakeShape" required />
-            <label for="circle">Circle</label>
-
-            <input type="checkbox" id="rectangle" name="cakeShape" required />
-            <label for="rectangle">Rectangle</label>
-
-            <input type="checkbox" id="other" name="cakeShape" required />
-            <label for="other">Other</label>
-
-        </fieldset>
-    </form>
-    <br>
+        <br>
+    </div>
     <!---------------------------------------------------User Registration Form-------------------------------------------->
     <div class=regForm>
 
@@ -102,7 +110,7 @@
 
             <label>First Name:</label>
             <input type="text" name="first_name" class="input-control" placeholder="Your First Name">
-
+            <br>
             <label>Last Name:</label>
             <input type="text" name="last_name" class="input-control" placeholder="Your Last Name">
 
@@ -111,7 +119,16 @@
 
             <label>Cell:</label>
             <input type="tel" name="cellPhone" class="input-control" placeholder="+1 (XXX)-XXX-XXXX">
+            <br>
+            <br>
+            <label for="freeform">Any restrictions, allergies or suggestions:</label>
+            <br>
 
+            <textarea id="commentArea" name="freeform" rows="4" cols="50">
+            </textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
 
         </form>
     </div>

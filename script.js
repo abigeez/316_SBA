@@ -16,3 +16,12 @@ animImg.addEventListener("mouseout", event => {
 
 ////////////////////////////////////////////////
 
+
+const firstForm = document.getElementById("flavorForm");
+
+// firstForm.addEventListener("submit"),(e) => {
+//     e.preventDefault();
+//     alert(`You submitted these preferences:
+//    ${fl.querySelector("input").value}`)
+// }
+console.log(firstForm)
