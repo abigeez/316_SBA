@@ -1,7 +1,7 @@
-const animBox = document.getElementsByClassName("animCake");
+const animImg = document.querySelector("img");
 
-function changeBox (event) {
-console.log(event);
+function changeImg (event) {
+event.target.style.backgroundColor = "aliceblue";
 }
 
-animBox.addEventListener("click",changeBox);
+animImg.addEventListener("click",changeImg);
