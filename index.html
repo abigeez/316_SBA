@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,37 +13,81 @@
 
     <header>
         <h1> Create Your Own Cake!</h1>
-     </header>
-     <container class ="imgCon">
-     <img class="animCake"src="images/Design.gif" alt="animated cake">
-     </container>
-    
+    </header>
+    <container class="imgCon">
+        <img class="animCake" src="images/Design.gif" alt="animated cake">
+    </container>
+
     <p id="cakeText">Click on the Cake!</p>
 
+<!-- -------------------------------------------Cake customization form-------------------------->
+
     <container id="cakeForm">
+        <form id="flavorForm">
+            <fieldset>
+                <legend>
+                    Choose a Flavor:
+                </legend>
+                <input type="checkbox" id="orange" name="flavors" />
+                <label for="orange">Orange</label>
+
+                <input type="checkbox" id="vanilla" name="flavors" />
+                <label for="Vanilla">Vanilla</label>
+
+                <input type="checkbox" id="mint" name="flavors" />
+                <label for="Mint">Mint</label>
+
+                <input type="checkbox" id="strawberry" name="flavors" />
+                <label for="Strawberry">Strawberry</label>
+
+                <input type="checkbox" id="chocolate" name="flavors" />
+                <label for="Chocolate">Chocolate</label>
+
+                <input type="checkbox" id="lemon" name="flavors" />
+                <label for="lemon">Lemon</label>
+            </fieldset>
+        </form>
+    </container>
+
+<!---------------------------Cake type form ------------------------------------------------------>
+
+    <form id="cakeTypeform">
+        <fieldset>
+            <legend>
+                Choose the Type of Cake:
+            </legend>
+            <input type="checkbox" id="chocolate2" name="cakeType" />
+            <label for="chocolate">Chocolate</label>
+
+            <input type="checkbox" id="white" name="cakeType" />
+            <label for="white">White</label>
+
+            <input type="checkbox" id="yellow" name="cakeType" />
+            <label for="yellow">Yellow</label>
+
+            <input type="checkbox" id="redVelvet" name="cakeType" />
+            <label for="redvelvet">Red Velvet</label>
+
+            <input type="checkbox" id="carrot" name="cakeType" />
+            <label for="carrot">Carrot</label>
+
+        </fieldset>
+    </form>
+<!---------------------------------Choose Cake Shape form---------------------------------------------->
 <form>
     <fieldset>
-    <legend>
-        Choose a Flavor:
-    </legend>
-<input type ="checkbox" id="orange" name="flavors"/>
-<label for ="orange">Orange</label>
-<input type ="checkbox" id="vanilla" name="flavors"/>
-<label for ="Vanilla">Vanilla</label>
-<input type ="checkbox" id="mint" name="flavors"/>
-<label for ="Mint">Mint</label>
-<input type ="checkbox" id="strawberry" name="flavors"/>
-<label for ="Strawberry">Strawberry</label>
-<input type ="checkbox" id="chocolate" name="flavors"/>
-<label for ="Chocolate">Chocolate</label>
-<input type ="checkbox" id="lemon" name="flavors"/>
-<label for ="lemon">Lemon</label>
-</fieldset>
+        <legend>
+Choose the Cake Shape:
+        </legend>
+
+
+
+
+
+
+    </fieldset>
 </form>
 
-
-</container>
-        
-
 </body>
+
 </html>
