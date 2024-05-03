@@ -7,16 +7,41 @@
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<header>
-    <h1> Create Your Own Cake!</h1>
- </header>
- <container class ="imgCon">
- <img class="animCake"src="images/Design.gif" alt="animated cake">
- </container>
-<p>Click on the Cake!</p>
+
 <body>
 
-   
+    <header>
+        <h1> Create Your Own Cake!</h1>
+     </header>
+     <container class ="imgCon">
+     <img class="animCake"src="images/Design.gif" alt="animated cake">
+     </container>
+    
+    <p id="cakeText">Click on the Cake!</p>
+
+    <container id="cakeForm">
+<form>
+    <fieldset>
+    <legend>
+        Choose a Flavor:
+    </legend>
+<input type ="checkbox" id="orange" name="flavors"/>
+<label for ="orange">Orange</label>
+<input type ="checkbox" id="vanilla" name="flavors"/>
+<label for ="Vanilla">Vanilla</label>
+<input type ="checkbox" id="mint" name="flavors"/>
+<label for ="Mint">Mint</label>
+<input type ="checkbox" id="strawberry" name="flavors"/>
+<label for ="Strawberry">Strawberry</label>
+<input type ="checkbox" id="chocolate" name="flavors"/>
+<label for ="Chocolate">Chocolate</label>
+<input type ="checkbox" id="lemon" name="flavors"/>
+<label for ="lemon">Lemon</label>
+</fieldset>
+</form>
+
+
+</container>
         
 
 </body>
