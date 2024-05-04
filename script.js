@@ -52,7 +52,7 @@ numInput.onkeydown = function numFunction(event){
 let text = "Please enter numbers only";
     if(isNaN(event.key) && event.key !== 'Backspace'){
         event.preventDefault();
-        document.getElementById("demo").innerHTML = text;
+        document.getElementById("numParent").lastChild.innerHTML = text;
     }
 
 };
