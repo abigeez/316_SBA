@@ -15,27 +15,9 @@ animImg.addEventListener("mouseout", event => {
 });
 
 ////////////////////////////////////////////////
-// const cakeCheck = document.querySelectorAll('input[value]:checked');
-// console.log(cakeCheck);
+
 ///////// confirming with user if preferences are correct
 const cakeForm = document.getElementById("flavorForm");
-const values = [];
-const elements = cakeForm.querySelectorAll(':checked');
-elements.forEach(InputEvent =>{values.push(element.value)});
-
-function getAllChecked(){
-  let checkboxes= document.getElementsByName('flavors');
-  let result="";
-  for (let i=0; i < checkboxes.length; i++){
-
-if (checkboxes[i].checked){
-     result += checkboxes[i].value + " ";
-    console.log(result);
-}
-  }
-  
-}
-
 cakeForm.addEventListener("submit", event => {
     event.preventDefault();
     let text= "Are the preferences you selected correct?"
@@ -45,3 +27,21 @@ cakeForm.addEventListener("submit", event => {
         console.log(null)
     }
 });
+
+///attempted to write the function below that would console log each result but couldn't find
+//out which way to concatenate them together 
+
+
+// function getAllChecked(){
+//   let checkboxes= document.getElementsByName('flavors');
+//   let result=[];
+//   for (let i=0; i < checkboxes.length; i++){
+// if (checkboxes[i].checked){
+//      result += checkboxes[i].value + " ";
+//     console.log(result);
+// }
+//   }
+  
+// }
+
+
