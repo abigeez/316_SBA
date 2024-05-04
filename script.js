@@ -20,15 +20,27 @@ animImg.addEventListener("mouseout", event => {
 ///////// confirming with user if preferences are correct
 const cakeForm = document.getElementById("flavorForm");
 const values = [];
-const elements = cakeForm.querySelectorAll('input[type="checkbox"]:checked');
+const elements = cakeForm.querySelectorAll(':checked');
+elements.forEach(InputEvent =>{values.push(element.value)});
+
+function getAllChecked(){
+  let checkboxes= document.getElementsByName('flavors');
+  let result="";
+  for (let i=0; i < checkboxes.length; i++){
+
+if (checkboxes[i].checked){
+     result += checkboxes[i].value + " ";
+    console.log(result);
+}
+  }
+  
+}
 
 cakeForm.addEventListener("submit", event => {
     event.preventDefault();
-    elements.forEach(InputEvent =>{values.push(element.value)});
-
     let text= "Are the preferences you selected correct?"
     if(confirm(text)==true){
-        console.log(values)
+        alert("Thank you for your order!")
     }else{
         console.log(null)
     }
