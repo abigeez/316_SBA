@@ -32,21 +32,21 @@
                 <label for="orange">Orange</label>
 
                 <input type="checkbox" id="vanilla" value="vanilla" name="flavors" />
-                <label for="Vanilla">Vanilla</label>
+                <label for="vanilla">Vanilla</label>
 
                 <input type="checkbox" id="mint" value="mint" name="flavors" />
-                <label for="Mint">Mint</label>
+                <label for="mint">Mint</label>
 
                 <input type="checkbox" id="strawberry" value="strawberry" name="flavors" />
-                <label for="Strawberry">Strawberry</label>
+                <label for="strawberry">Strawberry</label>
 
                 <input type="checkbox" id="chocolate" value="chocolate" name="flavors" />
-                <label for="Chocolate">Chocolate</label>
+                <label for="chocolate">Chocolate</label>
 
                 <input type="checkbox" id="lemon"   value="lemon"  name="flavors" />
                 <label for="lemon">Lemon</label>
                 <input type="checkbox" id="noFlav" value="none" name="flavors" />
-                <label for="none">None</label>
+                <label for="noFlav">None</label>
 
             </fieldset>
 
@@ -59,19 +59,19 @@
                 <legend>
                     Choose the Type of Cake:
                 </legend>
-                <input type="checkbox" id="chocolate2" name="flavors"  />
+                <input type="checkbox" id="chocolate2" name="flavors" value="chocolate"  />
                 <label for="chocolate">Chocolate</label>
 
-                <input type="checkbox" id="white" name="flavors" />
+                <input type="checkbox" id="white" name="flavors" value="white" />
                 <label for="white">White</label>
 
-                <input type="checkbox" id="yellow" name="flavors" />
+                <input type="checkbox" id="yellow" name="flavors" value="yellow" />
                 <label for="yellow">Yellow</label>
 
-                <input type="checkbox" id="redVelvet" name="cakeType"  />
-                <label for="redvelvet">Red Velvet</label>
+                <input type="checkbox" id="redVelvet" name="cakeType" value="redvelvet"   />
+                <label for="redVelvet">Red Velvet</label>
 
-                <input type="checkbox" id="carrot" name="cakeType" />
+                <input type="checkbox" id="carrot" name="cakeType" value="carrot"/>
                 <label for="carrot">Carrot</label>
 
             </fieldset>
@@ -96,7 +96,7 @@
                 <br>
                 <br>
 
-                <input type="submit" value="Submit">
+                <input type="submit" id="submit1"   value="Submit">
 
         </form>
 
@@ -105,23 +105,23 @@
     <!---------------------------------------------------User Registration Form-------------------------------------------->
     <div class=regForm>
 
-        <form>
+        <form id="customerReg">
             <legend>Customer Contact Info:</legend>
 
-            <label>First Name:</label>
-            <input type="text" name="first_name" class="input-control" placeholder="Your First Name">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="first_name" class="input-control" placeholder="Your First Name" autocomplete="off">
             <br>
-            <label>Last Name:</label>
-            <input type="text" name="last_name" class="input-control" placeholder="Your Last Name">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="last_name" class="input-control" placeholder="Your Last Name" autocomplete="off">
 
-            <label>Email:</label>
-            <input type="email" name="email" class="input-control" placeholder="email@abc123.com">
+            <label for="eMail">Email:</label>
+            <input type="email" id="eMail" name="email" class="input-control" placeholder="email@abc123.com" autocomplete="off">
 
-            <label>Cell:</label>
-            <input type="tel" name="cellPhone" class="input-control" placeholder="+1 (XXX)-XXX-XXXX">
+            <label for="cellU">Cell:</label>
+            <input type="tel"  id="cellU" name="cellPhone" class="input-control" placeholder="+1 (XXX)-XXX-XXXX" autocomplete="off">
             <br>
             <br>
-            <label for="freeform">Any restrictions, allergies or suggestions:</label>
+            <label for="commentArea">Any restrictions, allergies or suggestions:</label>
             <br>
 
             <textarea id="commentArea" name="freeform" rows="4" cols="50">

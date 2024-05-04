@@ -15,13 +15,14 @@ animImg.addEventListener("mouseout", event => {
 });
 
 ////////////////////////////////////////////////
+const cakeCheck = document.querySelectorAll('input[type="checkbox"]:checked');
 
 
-const firstForm = document.getElementById("flavorForm");
-
-// firstForm.addEventListener("submit"),(e) => {
-//     e.preventDefault();
-//     alert(`You submitted these preferences:
-//    ${fl.querySelector("input").value}`)
-// }
-console.log(firstForm)
+function myFunction() {
+    let text= "Are the preferences you selected correct?"
+    if(confirm(text)==true){
+        console.log()
+    }else{
+        console.log()
+    }
+}
