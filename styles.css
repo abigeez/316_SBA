@@ -10,15 +10,20 @@ img{
     display:flex;
     flex-direction: column;
     align-items: center;
+   
 }
 
 .regForm{
     border:2px black solid;
-    background-color: beige;
-
+    background-color: paleturquoise;
+    margin:8px;
+padding: 8px;
 }
 
 #cakeDetails{
-    border:1px black solid;
-    background-color: beige;
+    border:2px black solid;
+    background-color: orange;
+    margin: 8px;
+    padding: 8px;
 }
+
