@@ -44,4 +44,17 @@ cakeForm.addEventListener("submit", event => {
   
 // }
 
+//form validation 
 
+const numInput =document.getElementById("cellU");
+
+numInput.onkeydown = function(event){
+let text;
+    if(isNaN(event.key) && event.key !== 'Backspace'){
+        event.preventDefault();
+        
+    }else{
+        text = "Input invalid";
+    }
+document.getElementById("demo").innerHTML = text;
+};
