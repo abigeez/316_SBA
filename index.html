@@ -20,6 +20,7 @@
 
     <p id="cakeText">Click on the Cake!</p>
 
+
     <!-- -------------------------------------------Cake customization form-------------------------->
 
     <div id=cakeDetails>
@@ -107,7 +108,7 @@
 
         <form id="customerReg">
             <legend>Customer Contact Info:</legend>
-
+            <br>
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="first_name" class="input-control" placeholder="Your First Name"
                 autocomplete="off" minlength="2" required>
@@ -118,15 +119,16 @@
 
             <label for="eMail">Email:</label>
             <input type="email" id="eMail" name="email" class="input-control" placeholder="email@abc123.com"
-                autocomplete="off"required>
+                autocomplete="off" required>
 
             <label for="cellU">Cell:</label>
-            <input type="tel"  oninvalid="numFunction(event)"  id="cellU" name="cellPhone" class="input-control" placeholder="+1 (XXX)-XXX-XXXX"
-                autocomplete="off" required>
-                <br>
-                <p id="numParent">
-                    <span id="firstSpan"></span>
-                <span id="demo"></span></p>
+            <input type="tel" oninvalid="numFunction(event)" id="cellU" name="cellPhone" class="input-control"
+                placeholder="+1 (XXX)-XXX-XXXX" autocomplete="off" required>
+            <br>
+            <p id="numParent">
+                <span id="firstSpan"></span>
+                <span id="demo"></span>
+            </p>
             <br>
             <br>
             <label for="commentArea">Any restrictions, allergies or suggestions:</label>
@@ -137,7 +139,7 @@
             <br>
             <br>
             <input type="submit" value="Submit">
-            
+
 
         </form>
     </div>
