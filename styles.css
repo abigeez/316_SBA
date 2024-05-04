@@ -27,3 +27,16 @@ padding: 8px;
     padding: 8px;
 }
 
+header{
+    color:beige;
+    display:flex;
+    flex-direction:row;
+   justify-content: center;
+}
+
+#cakeText u{
+color:beige;
+display:flex;
+flex-direction:row;
+justify-content: center;
+}
