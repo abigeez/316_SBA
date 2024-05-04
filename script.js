@@ -56,3 +56,11 @@ let text = "Please enter numbers only";
     }
 
 };
+
+////creating new element in JS////////////
+const newEl = document.createElement("p");
+newEl.innerHTML = "Thank you for visiting our site. Please select your preferences to create one of our delicious cakes.";
+newEl.style.color = "grey";
+
+const parent = document.querySelector("#cakeText");
+parent.appendChild(newEl);
