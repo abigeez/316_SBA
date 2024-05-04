@@ -45,16 +45,14 @@ cakeForm.addEventListener("submit", event => {
 // }
 
 //form validation 
-
+//// making the input of the phone number text field allow numbers only
 const numInput =document.getElementById("cellU");
 
-numInput.onkeydown = function(event){
-let text;
+numInput.onkeydown = function numFunction(event){
+let text = "Please enter numbers only";
     if(isNaN(event.key) && event.key !== 'Backspace'){
         event.preventDefault();
-        
-    }else{
-        text = "Input invalid";
+        document.getElementById("demo").innerHTML = text;
     }
-document.getElementById("demo").innerHTML = text;
+
 };

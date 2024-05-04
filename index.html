@@ -121,8 +121,10 @@
                 autocomplete="off"required>
 
             <label for="cellU">Cell:</label>
-            <input type="tel" id="cellU" name="cellPhone" class="input-control" placeholder="+1 (XXX)-XXX-XXXX"
+            <input type="tel"  oninvalid="numFunction(event)"  id="cellU" name="cellPhone" class="input-control" placeholder="+1 (XXX)-XXX-XXXX"
                 autocomplete="off" required>
+                <br>
+                <p id="demo"></p>
             <br>
             <br>
             <label for="commentArea">Any restrictions, allergies or suggestions:</label>
@@ -133,7 +135,7 @@
             <br>
             <br>
             <input type="submit" value="Submit">
-            <p id="demo"></p>
+            
 
         </form>
     </div>
